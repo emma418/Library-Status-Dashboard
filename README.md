@@ -20,7 +20,7 @@ Create a EurekaService Module that will act as a service registry for microservi
 
 Right click on project  New -> Module.
 
-Choose Spring Initializr and set the Project such as SDK, type, and language. (Choose Java as language and Maven as type)
+Choose Spring Initializr and set the Project configuration such as SDK, type, and language. (Choose Java as language and Maven as type)
 
 Click Next, and from the dependencies section, choose:
 
@@ -81,7 +81,7 @@ Spring Boot DevTools
 
 Navigate to src/main/resources/application.properties.
 
-Add the following properties learned in the class and properties for H2
+Add the properties learned in the class and properties for H2
 
 
 
@@ -91,14 +91,15 @@ Create a new Java class Book in the entity package and annotate it with @Entity.
 
 Define properties for the Book entity and annotate them with JPA annotations.
 
-Create an interface BookRepository in the repository package.
-
-create a BookRepository and extend JpaRepository.
+Create an interface BookRepository in the repository package and extend JpaRepository.
 
 
-**4.Create Seeder to Populate Books:**
+
+**4.Create Seeder to Populate Books H2 in-memory database:**
 
 Create a new class DbSeeder and use it to populate the BookRepository with some initial books.
+
+Access the H2 console via http://localhost:<BookService-Port>/h2-console to manage and query the database 
 
 
 **5. Create Controller and Service to operate books**
