@@ -52,6 +52,7 @@ Right-click on the project and choose Run 'EurekaService'.
 Ensure the service is up and running on http://localhost:8761.
 
 ### Part 2: Setting up Book service module
+
 Create a BookService module that will register with Eureka and provide book-related operations.
 
 **1.Create Book Service Project:**
@@ -99,7 +100,7 @@ Create an interface BookRepository in the repository package and extend JpaRepos
 
 Create a new class DbSeeder and use it to populate the BookRepository with some initial books.
 
-Access the H2 console via http://localhost:<BookService-Port>/h2-console to manage and query the database 
+Access the H2 console via http://localhost:BookService-Port/h2-console to manage and query the database 
 
 
 **5. Create Controller and Service to operate books**
