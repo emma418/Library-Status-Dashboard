@@ -98,7 +98,7 @@ create a BookRepository and extend JpaRepository.
 
 **4.Create Seeder to Populate Books:**
 
-Create a new class DbSeeder and use it to populate the BookRepository with some initial movies.
+Create a new class DbSeeder and use it to populate the BookRepository with some initial books.
 
 
 **5. Create Controller and Service to operate books**
